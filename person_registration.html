@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration</title>
+    <link rel="icon" href="https://i.pinimg.com/originals/94/e3/7f/94e37f28a1359b00bbc985de4a3c2fb4.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <!-- Global Includes -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/setup.js"></script>
+    <script src="js/models.js"></script>
+
+    <!-- Page Includes -->
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/css-ninom/bootstrap.css" />
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/css-ninom/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/css-ninom/responsive.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/person_form.css">
+    <script src="js/person_registration.js"></script>
+
+
+    <!-- Date Picker JS -->
+    <script src="js/date_picker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
+    <!-- <link rel="stylesheet" href="css/date_picker.css"> -->
+
+    <!-- Awesome Font -->
+    <script src="https://kit.fontawesome.com/3aad77fea3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div data-include="horizontal_menu"></div>
+
+    <div class="container-fluid">
+        <div class="row mt-2">
+            <div data-include="vertical_menu"></div>
+            <div class="container rounded bg-white mt-5 mb-5 col-md-9">
+                <div class="row">
+                    <div class="col-md-3 border-right">
+                        <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold">Upload Photo</span>
+                        </div>
+                    </div>
+                    <div class="col-md-9 border-right">
+                        <div class="p-3 py-5">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h3 class="text-right">Registration</h3>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-5"><label class="labels">First Name</label><input type="text" class="form-control" placeholder="First name" value=""></div>
+                                <div class="col-md-2"><label class="labels">M.I.</label><input type="text" class="form-control" placeholder="" value="MI"></div>
+                                <div class="col-md-5"><label class="labels">Last Name</label><input type="text" class="form-control" value="" placeholder="Last name"></div>
+                                <div class="col-md-6"><label class="labels">DOB</label>
+                                    <div class="datepicker date input-group p-0 shadow-sm">
+                                        <input type="text" placeholder="Enter DOB" class="form-control py-3 px-3" id="dob-datepicker-person">
+                                        <div class="input-group-append"><span class="input-group-text px-3"><i class="fa fa-clock-o"></i></span></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6"><label class="labels">Pet Relationship</label>
+                                    <div class="form-group">
+                                        <select class="form-control" id="pet_relation_dropdown">
+                                            <option>--Select Person Type--</option>
+                                            <option>Primary Owner</option>
+                                            <option>Co-Owner</option>
+                                            <option>Third-Party Handler</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col"><label class="labels">Owner Group</label>
+                                    <div class="row m-2">
+                                        <div class="form-check m-1">
+                                            <input class="form-check-input" type="radio" name="military_type_radio" id="civilian">
+                                            <label class="form-check-label" for="flexRadioDefault1">Civilian</label>
+                                        </div>
+                                        <div class="form-check m-1">
+                                            <input class="form-check-input" type="radio" name="military_type_radio" id="army">
+                                            <label class="form-check-label" for="flexRadioDefault2">Army</label>
+                                        </div>
+                                        <div class="form-check m-1">
+                                            <input class="form-check-input" type="radio" name="military_type_radio" id="navy">
+                                            <label class="form-check-label" for="flexRadioDefault1">Navy</label>
+                                        </div>
+                                        <div class="form-check m-1">
+                                            <input class="form-check-input" type="radio" name="military_type_radio" id="marines">
+                                            <label class="form-check-label" for="flexRadioDefault1">Marines</label>
+                                        </div>
+
+                                        <div class="form-check m-1">
+                                            <input class="form-check-input" type="radio" name="military_type_radio" id="coast_guard">
+                                            <label class="form-check-label" for="flexRadioDefault1">Coast Guard</label>
+                                        </div>
+                                        <div class="form-check m-1">
+                                            <input class="form-check-input" type="radio" name="military_type_radio" id="air_force">
+                                            <label class="form-check-label" for="flexRadioDefault2">Air Force</label>
+                                        </div>
+                                        <div class="form-check m-1">
+                                            <input class="form-check-input" type="radio" name="military_type_radio" id="other">
+                                            <label class="form-check-label" for="flexRadioDefault1">Other</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <h6 class="text-left col-md-12">Identification Information</h6>
+                                <div class="col-md-6"><label class="labels">ID No. (Driver's License... etc.)</label><input type="text" class="form-control" placeholder="Last 4 digits" value=""></div>
+                                <div class="col-md-6"><label class="labels">ID Type</label>
+                                    <div class="form-group">
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>--Select ID Type--</option>
+                                            <option>Passport or Passport Card</option>
+                                            <option>Driver's License or State ID, issued by state's Department of Motor Vehicles</option>
+                                            <option>Company-issued ID card</option>
+                                            <option>Native Tribal Card</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6"><label class="labels">ID State</label><input type="text" class="form-control" placeholder="Enter state" value=""></div>
+                                <div class="col-md-6"><label class="labels">Expiration Date</label>
+                                    <div class="datepicker date input-group p-0 shadow-sm">
+                                        <input type="text" placeholder="Enter exp date" class="form-control py-3 px-3" id="exp-datepicker-person">
+                                        <div class="input-group-append"><span class="input-group-text px-3"><i class="fa fa-clock-o"></i></span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <h6 class="text-left mt-3 col-md-12">Current Address</h6>
+                                <div class="col-md-12"><label class="labels">Address Line 1</label><input type="text" class="form-control" placeholder="Enter address line 1" id="addr_line1"></div>
+                                <div class="col-md-12"><label class="labels">Address Line 2</label><input type="text" class="form-control" placeholder="Enter address line 2" id="addr_line2"></div>
+                                <div class="col-md-4"><label class="labels">City/Town</label><input type="text" class="form-control" placeholder="Enter city/town" id="city"></div>
+                                <div class="col-md-4"><label class="labels">State</label><input type="text" class="form-control" placeholder="Enter state" id="state"></div>
+                                <div class="col-md-4"><label class="labels">Zipcode</label><input type="text" class="form-control" placeholder="Enter zip" id="zipcode"></div>
+                            </div>
+                            <div class="row mt-3">
+                                <h6 class="text-left mt-3 col-md-12">Hawaii Address</h6>
+                                <div class="col-md-12"><label class="labels">Address Line 1</label><input type="text" class="form-control" placeholder="Enter address line 1" value=""></div>
+                                <div class="col-md-12"><label class="labels">Address Line 2</label><input type="text" class="form-control" placeholder="Enter address line 2" value=""></div>
+                                <div class="col-md-4"><label class="labels">City/Town</label><input type="text" class="form-control" placeholder="Enter city/town" value=""></div>
+                                <div class="col-md-4"><label class="labels">Island</label>
+                                    <div class="form-group">
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>--Select Island--</option>
+                                            <option>Hawaii</option>
+                                            <option>Maui</option>
+                                            <option>Oahu</option>
+                                            <option>Kauai</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4"><label class="labels">Zipcode</label><input type="text" class="form-control" placeholder="Enter zipcode" value=""></div>
+                            </div>
+                            <div class="row mt-3">
+                                <h6 class="text-left mt-3 col-md-12">Contact Information</h6>
+                                <div class="col-md-6"><label class="labels">Primary Number</label><input type="text" class="form-control" placeholder="Enter phone number" id="phone"></div>
+                                <div class="col-md-6"><label class="labels">Alternate Number</label><input type="text" class="form-control" placeholder="Enter alternate number" id="alt_phone"></div>
+                                <div class="col-md-6"><label class="labels">Country Address</label><input type="text" class="form-control" placeholder="Enter country number" id="phone_country"></div>
+                                <div class="col-md-6"><label class="labels">Email</label><input type="text" class="form-control" placeholder="Enter email" id="email"></div>
+                            </div>
+                            <div class="mt-5 text-center"><a class="btn btn-primary profile-button" type="button" href="my_trips.html" id="submit_person">Save Profile</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

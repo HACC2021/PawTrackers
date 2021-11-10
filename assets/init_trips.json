@@ -1,0 +1,28 @@
+[{
+        "airline": "southwest_airlines",
+        "flight_no": "WN920",
+        "program_id": "direct_airport_release",
+        "owner_status": "Incoming",
+        "covid_status": "Incomplete",
+        "pet_statuses": {
+            "0": "Incoming"
+        },
+        "handler_ids": [],
+        "trip_documents_ids": [],
+        "chat_ids": []
+    },
+    {
+        "airline": "hawaiian_airlines",
+        "flight_no": "WN920",
+        "program_id": "direct_airport_release",
+        "owner_status": "Waiting",
+        "covid_status": "Incomplete",
+        "pet_statuses": {
+            "1": "Picked Up",
+            "2": "Waiting"
+        },
+        "handler_ids": [],
+        "trip_documents_ids": [],
+        "chat_ids": []
+    }
+]

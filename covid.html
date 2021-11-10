@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TITLE_HERE</title>
+    <link rel="icon" href="https://i.pinimg.com/originals/94/e3/7f/94e37f28a1359b00bbc985de4a3c2fb4.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <!-- Global Includes -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/setup.js"></script>
+
+    <!-- Page Includes -->
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/css-ninom/bootstrap.css" />
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/css-ninom/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/css-ninom/responsive.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div data-include="horizontal_menu"></div>
+
+    <div class="container-fluid">
+        <div class="row mt-2">
+            <div data-include="vertical_menu"></div>
+            <div class="container border">
+                <div class="m-3">
+                    <h5>Are You Fully Vaccinated?</h5>
+                    <p>**has it been 14 days or more since you have completed a COVID-19 vaccination series (which is the required amount of doses for your particular brand vaccine; for example, 2 doses for Pfizer or 1 dose for Johnson and Johnson) and you
+                        have no symptoms</p>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="vacc_radio" id="full_vac" value="option1">
+                        <label class="form-check-label" for="full_vac">
+                            I HAVE BEEN FULLY VACCINATED (It has been 14 days since my last shot)
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="vacc_radio" id="no_vac" value="option2">
+                        <label class="form-check-label" for="no_vac">
+                            I HAVE NOT BEEN FULLY VACCINATED (It has not been 14 days since my last shot)
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <input class="form-check-input" type="radio" name="vacc_radio" id="no_say_vac" value="option3">
+                        <label class="form-check-label" for="no_say_vac">
+                            I PREFER NOT TO RESPOND
+                        </label>
+                    </div>
+                </div>
+                <div class="m-3">
+                    <h5>In the last 10 days...</h5>
+                    <p>Q1) Have you received a confirmed diagnosis for coronavirus (COVID-19) by a coronavirus (COVID-19) test or from a diagnosis by a health care professional or are you waiting for a pending COVID-19 test result?</p>
+                    <p>Q2) Have you had close contact with or cared for someone currently diagnosed with COVID-19 or are you participating in a COVID-19 clinical study that includes being exposed to the virus?</p>
+                    <p>Q3) Have you experienced any cold or flu-like symptoms (to include fever, cough, shortness of breath or difficulty breathing, sore throat, pressure in the chest, extreme fatigue, earache, persistent headache, diarrhea, vomiting, muscle
+                        pain, chills, repeated shaking with chills, and persistent loss of smell or taste)?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q_radio" id="no_ans" value="option1">
+                        <label class="form-check-label" for="no_ans">
+                            NO to all 3 questions
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q_radio" id="yes_ans" value="option2">
+                        <label class="form-check-label" for="yes_ans">
+                            YES to any one (or more) of the questions
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <input class="form-check-input" type="radio" name="q_radio" id="no_say_ans" value="option3">
+                        <label class="form-check-label" for="no_say_ans">
+                            I PREFER NOT TO RESPOND
+                        </label>
+                    </div>
+                </div>
+                <div class="ml-auto">
+                    <a class="btn btn-info btn-primary" href="user_trip_view.html">
+                        Submit
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

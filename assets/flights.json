@@ -1,0 +1,116 @@
+{
+    "southwest_airlines": {
+        "WN920": {
+            "flight_date": "11/1/2021",
+            "departure": "Las Vegas"
+        },
+        "WN748": {
+            "flight_date": "11/2/2021",
+            "departure": "Houston"
+        },
+        "WN111": {
+            "flight_date": "11/3/2021",
+            "departure": "Wilsonville"
+        },
+        "WN284": {
+            "flight_date": "11/4/2021",
+            "departure": "Portland"
+        },
+        "WN923": {
+            "flight_date": "11/5/2021",
+            "departure": "New York City"
+        },
+        "WN434": {
+            "flight_date": "11/6/2021",
+            "departure": "San Deigo"
+        }
+    },
+    "qantas_airways": {
+        "QF7554": {
+            "flight_date": "11/1/2021",
+            "departure": "Seattle"
+        },
+        "QF8947": {
+            "flight_date": "11/2/2021",
+            "departure": "Los Angeles"
+        },
+        "QF9384": {
+            "flight_date": "11/3/2021",
+            "departure": "Sao Paulo"
+        },
+        "QF2394": {
+            "flight_date": "11/4/2021",
+            "departure": "Chicago"
+        },
+        "QF4829": {
+            "flight_date": "11/5/2021",
+            "departure": "Philadephia"
+        },
+        "QF3253": {
+            "flight_date": "11/6/2021",
+            "departure": "Phoenix"
+        }
+    },
+    "figi_airlines": {
+        "FJ5875": {
+            "flight_date": "11/2/2021",
+            "departure": "Jacksonville"
+        },
+        "FJ3454": {
+            "flight_date": "11/3/2021",
+            "departure": "Nevada City"
+        },
+        "FJ1347": {
+            "flight_date": "11/4/2021",
+            "departure": "New Mexico City"
+        },
+        "FJ9462": {
+            "flight_date": "11/5/2021",
+            "departure": "Okalahoma City"
+        }
+    },
+    "hawaiian_airlines": {
+        "HA321": {
+            "flight_date": "11/6/2021",
+            "departure": "Nashville"
+        },
+        "HA749": {
+            "flight_date": "11/7/2021",
+            "departure": "Atlanta"
+        },
+        "HA395": {
+            "flight_date": "11/8/2021",
+            "departure": "Tempa"
+        },
+        "HA199": {
+            "flight_date": "11/9/2021",
+            "departure": "New Orleans"
+        },
+        "HA423": {
+            "flight_date": "11/10/2021",
+            "departure": "Anaheim"
+        }
+    },
+    "delta_airlines": {
+        "DA8539": {
+            "flight_date": "11/3/2021",
+            "departure": "Urvine"
+        },
+        "DA4329": {
+            "flight_date": "11/4/2021",
+            "departure": "Orlando"
+        },
+        "DA4833": {
+            "flight_date": "11/5/2021",
+            "departure": "Columbus"
+        },
+        "DA4859": {
+            "flight_date": "11/6/2021",
+            "departure": "Denver"
+        },
+        "DA4114": {
+            "flight_date": "11/7/2021",
+            "departure": "Salem"
+        }
+    }
+}

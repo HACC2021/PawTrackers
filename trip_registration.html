@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trip Registration</title>
+    <link rel="icon" href="https://i.pinimg.com/originals/94/e3/7f/94e37f28a1359b00bbc985de4a3c2fb4.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <!-- Global Includes -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/setup.js"></script>
+    <script src="js/models.js"></script>
+
+    <!-- Page Includes -->
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/css-ninom/bootstrap.css" />
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/css-ninom/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/css-ninom/responsive.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="js/popover.js"></script>
+    <link rel="stylesheet" href="css/popover.css">
+    <script src="js/trip_registration.js"></script>
+    <link rel="stylesheet" href="css/date.css">
+
+    <script src="js/tooltip.js"></script>
+
+    <!-- Awesome Font -->
+    <script src="https://kit.fontawesome.com/3aad77fea3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div data-include="horizontal_menu"></div>
+
+    <div class="container-fluid">
+        <div class="row mt-2">
+            <div data-include="vertical_menu"></div>
+            <div class="container border">
+                <h2>Apply for Animal Quaratine Hawaii</h2>
+
+                <div class="container col-md-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="labels">Airline</label>
+                            <div class="form-group">
+                                <select class="form-control" id="airline_dropdown">
+                                    <option airline_id="">--Select--</option>
+                                    <option airline_id="southwest_airlines">Southwest Airlines</option>
+                                    <option airline_id="qantas_airways">Qantas Airways</option>
+                                    <option airline_id="figi_airlines">Fiji Airways</option>
+                                    <option airline_id="hawaiian_airlines">Hawaiian Airlines</option>
+                                    <option airline_id="delta_airlines">Delta Airlines</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label class="labels">Flight No.</label>
+                            <div class="form-group">
+                                <select class="form-control" id="flight_no_dropdown">
+                                    <option>--Select--</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4"><label class="labels">Program</label>
+                            <div class="form-group">
+                                <select class="form-control" id="program_dropdown">
+                                    <option program_id="select">--Select--</option>
+                                    <option program_id="direct_airport_release">Direct Airport Release ($185)</option>
+                                    <option program_id="5_day">5 Day or Less ($244)</option>
+                                    <option program_id="early_5_day">Early ($244 + $14.30/day)</option>
+                                    <option program_id="niip_dar">Neighbor Island Inspection Permit ($165)</option>
+                                    <option program_id="subsequent_entry">Subsequent Entry ($98)</option>
+                                    <option program_id="120_day">120 Day Quaratine ($1,080)</option>
+                                    <option program_id="transit">Transit ($45 + $14.30/day)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <hr class="solid">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p style="text-align:right;margin:0;">Subtotal:</p>
+                            <p style="text-align:right;margin:0;">Taxes:</p>
+                            <p style="text-align:right;">Total:</p>
+                        </div>
+                        <div class="col">
+                            <p id="subtotal_val" style="text-align:left;margin:0;">$0.00</p>
+                            <p id="tax_val" style="text-align:left;margin:0;">$0.00</p>
+                            <p id="total_val" style="text-align:left;">$0.00</p>
+                        </div>
+                    </div>
+
+
+                    <div style="text-align:center">
+                        <a class="btn btn-primary" href="my_trips.html" role="button" id="submit_trip">Save Trip</a>
+                    </div>
+                    <hr class="solid">
+
+                    <table class="table" style='font-size:80%'>
+                        <thead>
+                            <tr>
+                                <th>Programs</th>
+                                <th>Description</th>
+                                <th>Important Information</th>
+                                <th>Fees</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Direct Airport Release</td>
+                                <td>Program where dogs and cats taht are qualified may be released at the airport after passing an entry inspection. Also known as DAR.</td>
+                                <td>All DAR Requirements must be completed incluing all necessary documents received by the AQS 1- or more before the arrival of the anima lin Honolulu. Refer ot NIIP-DAR for Driect Airport Release on the isalnd of Hawaii,
+                                    Maui and Kauai.</td>
+                                <td>$185 - Pets are not eligible for this DAR fee when documents are not recied 10 days or more before arrival. (See NIIP - DAR fees for Direct Airport Relese fee on the island of HAwaii, Maui and Kauai.)</td>
+                            </tr>
+                            <tr>
+                                <td>5 Days or Less</td>
+                                <td>Program where dogs and cats remain in quarantine for up to 5 days. This program may be selected by the owner or there are issues with a pet's qualification that must be resolved before it can be released.</td>
+                                <td>Examples include: owner or authorized person is unable to pick up pet on arrival date; documents submitted on arrival; documents not recieved 10 days or more before arrival; animal may have discrepancies with original documentaion,
+                                    microcip number, etc.</td>
+                                <td>$244</td>
+                            </tr>
+                            <tr>
+                                <td>Early for 5 Day or Less</td>
+                                <td>Program where dogs and cats arrive in Hawaii before the date they are qualified and eligible for the 5 day or Less progam.</td>
+                                <td>Quarantine period is from 6 to 119 days until all requirements for the 5 day or Less program completed. For exampel, pet arrives before 120 days after FAVN test sample was recieved by the laboratory. etc.</td>
+                                <td>$14.30 / day - the pet arrives early before the date it is eligible for the 5 day or less program pluss $244. Limit of $1,082.</td>
+                            </tr>
+                            <tr>
+                                <td>Neighbor Island Inspection Permit (NIIP-DAR)</td>
+                                <td>This permit is required to flly direct, from out-of-state, to Kona on the island of HAwaii, Kahului on the island of Maui and Lihue on the island of Kauai as DAR.</td>
+                                <td>No permit is required to fly into Honolulu. A $35 fee is assessed for request ot change a NIIP that is already issued. Must be DAR qualified.</td>
+                                <td>$165 for a NIIP-DAR. Additional $35 for changes to a NIIP-DAR.</td>
+                            </tr>
+                            <tr>
+                                <td>Subsequent Entry</td>
+                                <td>Successive DAR entry(s) during the period the FAVN test and rabies vaccines used for an initial DAR entry are still valid. Also known as Re-Entry.</td>
+                                <td>A current health certificate required for each entry. Lower fee applies to Honolulu arrivals only and when documents are received 10 days or more before arrival.</td>
+                                <td>$98 - Fees revert when FAVN test or Rabies vaccine is updated.</td>
+                            </tr>
+                            <tr>
+                                <td>120 Days Quarantine</td>
+                                <td>Program where dogs and cats remain in quarantine for 120 days.</td>
+                                <td>For dogs and cats that do no qualify for alternate quarantine programs such as the 5 day or less program.</td>
+                                <td>$1080</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Trips</title>
+    <link rel="icon" href="https://i.pinimg.com/originals/94/e3/7f/94e37f28a1359b00bbc985de4a3c2fb4.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <!-- Global Includes -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/models.js"></script>
+    <script src="js/setup.js"></script>
+
+    <!-- Page Includes -->
+    <script src="https://kit.fontawesome.com/3aad77fea3.js" crossorigin="anonymous"></script>
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/css-ninom/bootstrap.css" />
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/css-ninom/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/css-ninom/responsive.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/my_trips.js"></script>
+
+</head>
+
+<body>
+    <div data-include="horizontal_menu"></div>
+
+    <div class="container-fluid">
+        <div class="row mt-2">
+            <div data-include="vertical_menu" class="col-md-2"></div>
+            <div class="col">
+                <h2>My Trips</h2>
+                <div class="container border col-md m-2">
+                    <div class="col-md-11 d-flex p-1 m-2">
+                        <div class="ml-auto">
+                            <a class="btn btn-info btn-primary" href="trip_registration.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
+                                    </svg>Trip</a>
+                        </div>
+                    </div>
+                    <table class="table" id="my_trip_table">
+                        <thead>
+                            <tr>
+                                <th>Flight No.</th>
+                                <th>Date</th>
+                                <th>No. of Pets</th>
+                                <th>Program</th>
+                                <th>Handler</th>
+                                <th>Status</th>
+                                <th>Documents</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr>
+                                <td>
+                                    <a href="user_trip_view.html">HA01</a>
+                                </td>
+                                <td>11/02/2021</td>
+                                <td>1</td>
+                                <td>Program</td>
+                                <td>Self</td>
+                                <td>Checked In</td>
+                                <td>Incomplete</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="user_trip_view.html">DL1234</a>
+                                </td>
+                                <td>10/21/2021</td>
+                                <td>2</td>
+                                <td>Program</td>
+                                <td>Bob Ross</td>
+                                <td>Completed</td>
+                                <td>Completed</td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<button type="button" class="btn btn-info btn-primary" data-toggle="popover">Upload Document</button>
+
+<h1 class="d-sm-none" id="popover-head">Upload Document</h1>
+
+<div class="d-sm-none" id="popover-content">
+    <div class="row m-2">
+        <div class="col-md-6">
+            <label class="labels">Document Type</label>
+            <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect1">
+                        <option>--Select Document Type--</option>
+                        <option>Prior Rabies Vaccine Certificate</option>
+                        <option>Current Rabies Vaccine Certificate</option>
+                        <option>Health Certificate</option>
+                        <option>Health Certificate Issued in Hawaii (for HI pets returning)</option>
+                    </select>
+            </div>
+        </div>
+        <div class="col-md-6"><label class="labels">Expiration Date</label>
+            <div class="datepicker date input-group p-0 shadow-sm">
+                <input type="text" placeholder="Enter Exp Date" class="form-control py-3 px-3" id="reservationDate">
+                <div class="input-group-append"><span class="input-group-text px-3"><i class="fa fa-clock-o"></i></span></div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <label class="labels">Upload File</label>
+            <div class="input-group mb-3">
+                <div class="input-group">
+                    <input id="input-b2" name="input-b2" type="file" class="file" data-show-preview="true">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">Upload</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
