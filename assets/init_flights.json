@@ -1,0 +1,142 @@
+{
+    "southwest_airlines": {
+        "WN920": {
+            "departure": "Las Vegas",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-14 08:00:00"
+        },
+        "WN748": {
+            "departure": "Houston",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-15 09:00:00"
+        },
+        "WN111": {
+            "departure": "Wilsonville",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-16 10:00:00"
+        },
+        "WN284": {
+            "departure": "Portland",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-17 11:00:00"
+        },
+        "WN923": {
+            "departure": "New York City",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-18 12:00:00"
+        },
+        "WN434": {
+            "departure": "San Deigo",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-19 13:00:00"
+        }
+    },
+    "qantas_airways": {
+        "QF7554": {
+            "departure": "Seattle",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-12 14:00:00"
+        },
+        "QF8947": {
+            "departure": "Los Angeles",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-13 15:00:00"
+        },
+        "QF9384": {
+            "departure": "Sao Paulo",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-14 16:00:00"
+        },
+        "QF2394": {
+            "departure": "Chicago",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-15 17:00:00"
+        },
+        "QF4829": {
+            "departure": "Philadephia",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-16 18:00:00"
+        },
+        "QF3253": {
+            "departure": "Phoenix",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-17 19:00:00"
+        }
+    },
+    "figi_airlines": {
+        "FJ5875": {
+            "departure": "Jacksonville",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-15 20:00:00"
+        },
+        "FJ3454": {
+            "departure": "Nevada City",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-16 21:00:00"
+        },
+        "FJ1347": {
+            "departure": "New Mexico City",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-17 22:00:00"
+        },
+        "FJ9462": {
+            "departure": "Okalahoma City",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-18 23:00:00"
+        }
+    },
+    "hawaiian_airlines": {
+        "HA321": {
+            "departure": "Nashville",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-17 00:00:00"
+        },
+        "HA749": {
+            "departure": "Atlanta",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-18 01:00:00"
+        },
+        "HA395": {
+            "departure": "Tempa",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-19 02:00:00"
+        },
+        "HA199": {
+            "departure": "New Orleans",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-20 03:00:00"
+        },
+        "HA423": {
+            "departure": "Anaheim",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-21 04:00:00"
+        }
+    },
+    "delta_airlines": {
+        "DA8539": {
+            "departure": "Urvine",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-18 05:00:00"
+        },
+        "DA4329": {
+            "departure": "Orlando",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-19 06:00:00"
+        },
+        "DA4833": {
+            "departure": "Columbus",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-20 07:00:00"
+        },
+        "DA4859": {
+            "departure": "Denver",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-21 08:30:00"
+        },
+        "DA4114": {
+            "departure": "Salem",
+            "arrival_destination": "Honolulu",
+            "arrival_time": "2021-11-22 09:30:00"
+        }
+    }
+}

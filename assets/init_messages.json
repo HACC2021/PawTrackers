@@ -1,0 +1,109 @@
+[{
+        "message_id": "0",
+        "msg": "Hi!",
+        "is_user": true,
+        "timestamp": "2021-11-17 02:00"
+    },
+    {
+        "message_id": "1",
+        "msg": "This is an employee's response by going on Employee Mode > Chat (Left Menu)",
+        "is_user": false,
+        "timestamp": "2021-11-17 03:00"
+    },
+    {
+        "message_id": "2",
+        "msg": "This is a user's response by going on User Mode > My Trips (Left Menu) > Select Flight Link > Get Help",
+        "is_user": true,
+        "timestamp": "2021-11-17 04:00"
+    },
+    {
+        "message_id": "3",
+        "msg": "This is message D",
+        "is_user": true,
+        "timestamp": "2021-11-17 05:00"
+    },
+    {
+        "message_id": "4",
+        "msg": "This is message E",
+        "is_user": false,
+        "timestamp": "2021-11-17 06:00"
+    },
+    {
+        "message_id": "5",
+        "msg": "This is message F",
+        "is_user": true,
+        "timestamp": "2021-11-17 07:00"
+    },
+    {
+        "message_id": "6",
+        "msg": "This is message G",
+        "is_user": true,
+        "timestamp": "2021-11-17 08:00"
+    },
+    {
+        "message_id": "7",
+        "msg": "This is message H",
+        "is_user": true,
+        "timestamp": "2021-11-17 09:00"
+    },
+    {
+        "message_id": "8",
+        "msg": "This is message I",
+        "is_user": true,
+        "timestamp": "2021-11-17 10:00"
+    },
+    {
+        "message_id": "9",
+        "msg": "This is message J",
+        "is_user": false,
+        "timestamp": "2021-11-17 11:00"
+    },
+    {
+        "message_id": "10",
+        "msg": "This is message K",
+        "is_user": false,
+        "timestamp": "2021-11-17 12:00"
+    },
+    {
+        "message_id": "11",
+        "msg": "This is message L",
+        "is_user": true,
+        "timestamp": "2021-11-17 13:00"
+    },
+    {
+        "message_id": "12",
+        "msg": "This is message M",
+        "is_user": true,
+        "timestamp": "2021-11-17 01:00"
+    },
+    {
+        "message_id": "13",
+        "msg": "This is message M",
+        "is_user": false,
+        "timestamp": "2021-11-17 01:00"
+    },
+    {
+        "message_id": "14",
+        "msg": "This is message N",
+        "is_user": true,
+        "timestamp": "2021-11-17 01:00"
+    },
+    {
+        "message_id": "15",
+        "msg": "This is message O",
+        "is_user": true,
+        "timestamp": "2021-11-17 01:00"
+    },
+    {
+        "message_id": "16",
+        "msg": "This is message P",
+        "is_user": false,
+        "timestamp": "2021-11-17 01:00"
+    },
+    {
+        "message_id": "17",
+        "msg": "This is message Q",
+        "is_user": true,
+        "timestamp": "2021-11-17 01:00"
+    }
+]

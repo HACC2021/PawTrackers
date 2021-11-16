@@ -1,4 +1,5 @@
-function add_rows(table_sel, arr) {
+function add_rows(table_sel, arr, callback) {
+    // console.log("ADD R:", $(table_sel))
     $(table_sel).ready(function() {
         row_html = ""
         for (var i = 0; i < arr.length; i++) {
@@ -9,5 +10,6 @@ function add_rows(table_sel, arr) {
             row_html += "</tr>"
         }
         $(table_sel).append(row_html);
+        if (callback) callback();
     });
 }

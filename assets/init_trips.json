@@ -1,28 +1,73 @@
 [{
+        "trip_id": "0",
         "airline": "southwest_airlines",
-        "flight_no": "WN920",
+        "flight_id": "WN920",
         "program_id": "direct_airport_release",
-        "owner_status": "Incoming",
         "covid_status": "Incomplete",
-        "pet_statuses": {
-            "0": "Incoming"
-        },
-        "handler_ids": [],
-        "trip_documents_ids": [],
-        "chat_ids": []
+        "trip_document_ids": [],
+        "chat_ids": [],
+        "update_time": "11/13/2021 11:00",
+        "eta_check_in_time": "11/13/2021 12:00",
+        "message_ids": [0, 1, 2]
     },
     {
+        "trip_id": "1",
         "airline": "hawaiian_airlines",
-        "flight_no": "WN920",
+        "flight_id": "HA749",
         "program_id": "direct_airport_release",
-        "owner_status": "Waiting",
         "covid_status": "Incomplete",
-        "pet_statuses": {
-            "1": "Picked Up",
-            "2": "Waiting"
-        },
-        "handler_ids": [],
-        "trip_documents_ids": [],
-        "chat_ids": []
+        "trip_document_ids": [],
+        "chat_ids": [],
+        "update_time": "11/13/2021 12:00",
+        "eta_check_in_time": "11/13/2021 11:00",
+        "message_ids": [3, 4, 5]
+    },
+    {
+        "trip_id": "2",
+        "airline": "hawaiian_airlines",
+        "flight_id": "HA749",
+        "program_id": "direct_airport_release",
+        "covid_status": "Incomplete",
+        "trip_document_ids": [],
+        "chat_ids": [],
+        "update_time": "11/13/2021 12:00",
+        "eta_check_in_time": "11/13/2021 11:00",
+        "message_ids": [6, 7, 8]
+    },
+    {
+        "trip_id": "3",
+        "airline": "hawaiian_airlines",
+        "flight_id": "HA749",
+        "program_id": "direct_airport_release",
+        "covid_status": "Incomplete",
+        "trip_document_ids": [],
+        "chat_ids": [],
+        "update_time": "11/13/2021 12:00",
+        "eta_check_in_time": "11/13/2021 11:00",
+        "message_ids": [9, 10, 11]
+    },
+    {
+        "trip_id": "4",
+        "airline": "hawaiian_airlines",
+        "flight_id": "HA749",
+        "program_id": "direct_airport_release",
+        "covid_status": "Incomplete",
+        "trip_document_ids": [],
+        "chat_ids": [],
+        "update_time": "11/13/2021 12:00",
+        "eta_check_in_time": "11/13/2021 11:00",
+        "message_ids": [12, 13, 14]
+    },
+    {
+        "trip_id": "5",
+        "airline": "hawaiian_airlines",
+        "flight_id": "HA749",
+        "program_id": "direct_airport_release",
+        "covid_status": "Incomplete",
+        "trip_document_ids": [],
+        "chat_ids": [],
+        "update_time": "11/13/2021 12:00",
+        "eta_check_in_time": "11/13/2021 11:00",
+        "message_ids": [15, 16, 17]
     }
 ]

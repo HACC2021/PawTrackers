@@ -12,6 +12,16 @@
             "label": "run server on windows",
             "type": "shell",
             "command": "source ~/.bashrc; winpty python.exe -m http.server"
+        },
+        {
+            "label": "start my_sql server",
+            "type": "shell",
+            "command": "mysql -u root -p"
+        },
+        {
+            "label": "reset database",
+            "type": "shell",
+            "command": "source my_sql/paw_trackers.sql"
         }
     ]
 }

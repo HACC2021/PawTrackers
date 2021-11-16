@@ -1,56 +1,56 @@
 [{
-        "program_name": "--Select--",
         "program_id": "select",
+        "program_name": "--Select--",
         "base_price": 0,
-        "day_price": 0,
+        "daily_price": 0,
         "max_price": 0
     }, {
-        "program_name": "Direct Airport Release",
         "program_id": "direct_airport_release",
+        "program_name": "Direct Airport Release",
         "base_price": 185,
-        "day_price": 0,
+        "daily_price": 0,
         "max_price": 1e9
     },
     {
-        "program_name": "5 Day or Less",
         "program_id": "5_day",
+        "program_name": "5 Day or Less",
         "base_price": 244,
-        "day_price": 0,
+        "daily_price": 0,
         "max_price": 1e9
     },
     {
-        "program_name": "Early for 5 Day or Less",
         "program_id": "early_5_day",
+        "program_name": "Early for 5 Day or Less",
         "base_price": 244,
-        "day_price": 14.30,
+        "daily_price": 14.30,
         "max_price": 1082
     },
     {
-        "program_name": "Neighbor Island Inspection Permit (NIIP-DAR)",
         "program_id": "niip_dar",
+        "program_name": "Neighbor Island Inspection Permit (NIIP-DAR)",
         "base_price": 165,
-        "day_price": 0,
+        "daily_price": 0,
         "max_price": 1e9
     },
     {
-        "program_name": "Subsequent Entry",
         "program_id": "subsequent_entry",
+        "program_name": "Subsequent Entry",
         "base_price": 98,
-        "day_price": 0,
+        "daily_price": 0,
         "max_price": 1e9
     },
     {
-        "program_name": "120 Days Quarantine",
         "program_id": "120_day",
+        "program_name": "120 Days Quarantine",
         "base_price": 1080,
-        "day_price": 0,
+        "daily_price": 0,
         "max_price": 1e9
     },
     {
-        "program_name": "Transit",
         "program_id": "transit",
+        "program_name": "Transit",
         "base_price": 45,
-        "day_price": 14.30,
+        "daily_price": 14.30,
         "max_price": 1e9
     }
 ]

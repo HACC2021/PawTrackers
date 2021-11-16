@@ -1,8 +1,19 @@
 [{
-    "doc_name": "rabiesVaccine.png",
-    "type": "Prior Rabies Vaccine Certificate",
-    "sts": "Received",
-    "link": "assets/document_examples/rabiesVaccine.png",
-    "is_trip": false,
-    "is_pet": true
-}]
+        "doc_id": "0",
+        "doc_type": "Prior Rabies Vaccine Certificate",
+        "doc_status": "Received",
+        "link": "assets/document_examples/rabies_vaccine.png",
+        "is_trip": false,
+        "is_pet": true,
+        "submission_time": "2021-11-15 12:14:02"
+    },
+    {
+        "doc_id": "1",
+        "doc_type": "Health Certificate",
+        "doc_status": "Rejected",
+        "link": "assets/document_examples/health_certificate.png",
+        "is_trip": false,
+        "is_pet": true,
+        "submission_time": "2021-11-17 07:32:16"
+    }
+]

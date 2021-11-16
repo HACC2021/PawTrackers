@@ -1,0 +1,43 @@
+[{
+        "trip_id": 0,
+        "pet_id": 0,
+        "handler_id": 0,
+        "pet_status": "In Transit",
+        "handler_status": "Incoming"
+    },
+    {
+        "trip_id": 1,
+        "pet_id": 1,
+        "handler_id": 0,
+        "pet_status": "In Transit",
+        "handler_status": "Waiting"
+    },
+    {
+        "trip_id": 2,
+        "pet_id": 2,
+        "handler_id": 0,
+        "pet_status": "In Transit",
+        "handler_status": "Checked_In"
+    },
+    {
+        "trip_id": 3,
+        "pet_id": 0,
+        "handler_id": 0,
+        "pet_status": "In Transit",
+        "handler_status": "Completed"
+    },
+    {
+        "trip_id": 4,
+        "pet_id": 1,
+        "handler_id": 0,
+        "pet_status": "In Transit",
+        "handler_status": "Incoming"
+    },
+    {
+        "trip_id": 5,
+        "pet_id": 2,
+        "handler_id": 0,
+        "pet_status": "In Transit",
+        "handler_status": "Checked_In"
+    }
+]
