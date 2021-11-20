@@ -10,9 +10,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/models.js"></script>
     <script src="js/setup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="js/popover.js"></script>
+    <link rel="stylesheet" href="css/popover.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
 
     <!-- Page Includes -->
     <script src="https://kit.fontawesome.com/3aad77fea3.js" crossorigin="anonymous"></script>
+    <script src="js/add_row_dynamically.js"></script>
+    <script src="js/my_pets.js"></script>
     <!-- slider stylesheet -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
     <!-- bootstrap core css -->
@@ -30,23 +37,28 @@
     <div data-include="horizontal_menu"></div>
 
     <div class="container-fluid">
-        <div class="row mt-2">
-            <div data-include="vertical_menu" class="col-md-2"></div>
+        <div class="row my-5">
+        </div>
 
-            <div class="col">
-                <div class="row mt-2">
-                    <div class="container border col-md m-2">
-                        <div class="col-md-11 d-flex p-1 m-2">
-                            <h2>My Pets</h2>
-                            <div class="ml-auto">
-                                <a class="btn btn-info btn-primary" href="pet_registration.html">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
+        <div class="row tablerow justify-content-center">
+            <div class="card tablecard p-4">
+                <div class="col-12">
+                    <h2>My Pets</h2>
+                    <div class="container card_border p-0">
+
+                        <!-- <div class="ml-auto"> -->
+                        <div class="col-md-12 d-flex p-1 my-2">
+                            <div class="ml-auto mr-2">
+                                <a class="btn btn-info btn-primary btn_pet" href="pet_registration.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
                                     </svg>Pet
                                 </a>
                             </div>
                         </div>
-                        <table class="table">
+                        <!-- </div> -->
+
+                        <table class="table" id="my_pet_table">
                             <thead>
                                 <tr>
                                     <th>Pet Name</th>
@@ -56,36 +68,13 @@
                                     <th>Microchip</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Spot</td>
-                                    <td>Arrived</td>
-                                    <td>02/06/2019</td>
-                                    <td>Dog</td>
-                                    <td>A113</td>
-                                </tr>
-                                <tr>
-                                    <td>Stitch</td>
-                                    <td>Picked Up</td>
-                                    <td>01/26/2015</td>
-                                    <td>Cat</td>
-                                    <td>A114</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
                         </table>
                     </div>
                 </div>
-
             </div>
         </div>
+
+
     </div>
 
 </body>

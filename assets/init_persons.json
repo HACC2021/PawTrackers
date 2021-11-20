@@ -24,9 +24,9 @@
         "alt_phone": "(808)765-0987",
         "country_addr": "+1",
         "email": "joe@gmail.com",
-        "handler_ids": [],
-        "pet_ids": [],
-        "trip_ids": [0],
+        "handler_ids": [0, 1],
+        "pet_ids": [0, 1],
+        "trip_ids": [0, 1],
         "update_time": "2021-11-17 05:22:51"
     },
     {

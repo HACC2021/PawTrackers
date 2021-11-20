@@ -10,8 +10,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/models.js"></script>
     <script src="js/setup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
     <!-- Page Includes -->
+    <script src="https://kit.fontawesome.com/3aad77fea3.js" crossorigin="anonymous"></script>
     <!-- slider stylesheet -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
     <!-- bootstrap core css -->
@@ -22,11 +24,8 @@
     <link href="css/css-ninom/style.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="css/css-ninom/responsive.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/person_form.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/registration_form.css">
 
     <!-- Date Picker JS -->
     <script src="js/pet_registration.js"></script>
@@ -36,25 +35,23 @@
     <!-- Awesome Font -->
     <script src="https://kit.fontawesome.com/3aad77fea3.js" crossorigin="anonymous"></script>
 
-    <!-- Add Field -->
-    <script src="js/add_field.js"></script>
-    <link rel="stylesheet" href="css/add_field.css">
+    <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
     <div data-include="horizontal_menu"></div>
 
     <div class="container-fluid">
-        <div class="row mt-2">
-            <div data-include="vertical_menu" class="col-md-2"></div>
-            <div class="container rounded bg-white mt-5 mb-5 col-md-9">
-                <div class="row">
-                    <div class="col-md">
+        <div class="row mt-5 justify-content-center">
+            <div class="container row_border rounded bg-white mt-5 mb-5 col-md-9">
+                <div class="row pt-5 justify-content-center">
+                    <div class="col-md-10">
+                        <h3 class="text-center text_reg">Pet Registration</h3>
                         <div class="p-3 py-5">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h4 class="text-right">Pet Registration</h4>
-                            </div>
-                            <div class="row mt-2">
+
+                            <div class="row mb-5 pb-3 px-2 form_info_border">
+                                <h6 class="col-md-12 mt-3 text-left">Pet Information</h6>
+
                                 <div class="col-md-6"><label class="labels">Pet Name</label><input type="text" class="form-control" placeholder="Pet name" value=""></div>
                                 <div class="col-md-6"><label class="labels">Species</label>
                                     <div class="form-group">
@@ -105,27 +102,27 @@
                                     </div>
                                     <div class="row mt-2 ml-2">
                                         <div class="col-md-0">
-                                            <div class="row ml-0 bg-light mt-2 border py-2">
-                                                <div class="col-md-12"><button class="btn btn-outline-lite py-0 add_new_frm_field_btn_2"><i class="fas fa-plus add_icon"></i> Add Microchip #</button></div>
-                                            </div>
+                                            <button class="btn btn-info btn-primary add_new_frm_field_btn_2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
+                                                </svg>Add Microchip #
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <h5 class="text-left m-3 mb-0">Authorized Vistiors</h5>
-                        </div>
-                        <div class="row m-2 mt-0 mb-0">
-                            <div class="col-md-3"><label class="labels">First Name</label></div>
-                            <div class="col-md-2"><label class="labels">M.I.</label></div>
-                            <div class="col-md-3"><label class="labels">Last Name</label></div>
-                            <div class="col-md-4"><label class="labels">ID No. (Driver's License... etc.)</label></div>
-                        </div>
-                        <div class="row m-2 mt-0">
-                            <div class="col-md-12 p-0 ml-0">
-                                <div class="col-md-12 form_field_outer p-0">
+
+                            <div class="row mb-5 pb-3 px-2 form_info_border">
+                                <h6 class="text-left mt-3 col-md-12">Authorized Vistiors</h6>
+
+                                <div class="col-md-3"><label class="labels">First Name</label></div>
+                                <div class="col-md-2"><label class="labels">M.I.</label></div>
+                                <div class="col-md-3"><label class="labels">Last Name</label></div>
+                                <div class="col-md-4"><label class="labels">ID No. (Driver's License... etc.)</label></div>
+                                <!-- <div class="row m-2 mt-0">
+                                <div class="col-md-12 p-0 ml-0"> -->
+                                <div class="col-md-12 form_field_outer p-2">
                                     <div class="row form_field_outer_row">
                                         <div class="form-group col-md-3"><input type="text" class="form-control w_90" name="first_name[]" id="first_name_1" placeholder="First name" /></div>
                                         <div class="form-group col-md-2"><input type="text" class="form-control w_90" name="mi[]" id="mi_1" placeholder="MI" /></div>
@@ -134,90 +131,87 @@
                                         <div class="form-group col-md-2 add_del_btn_outer"><button class="btn_round remove_node_btn_frm_field" disabled><i class="fas fa-trash-alt"></i></button></div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row m-2">
-                            <div class="col-md-0 ml-3">
-                                <div class="row ml-0 bg-light mt-2 border py-2">
-                                    <div class="col-md-12"><button class="btn btn-outline-lite py-0 add_new_frm_field_btn"><i class="fas fa-plus add_icon"></i> Add Authorized User</button></div>
+                                <div class="col-md-12 text-center">
+                                    <button class="btn btn-info btn-primary add_new_frm_field_btn col-md-12 text-center ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
+                                        </svg>Add Authorized User
+                                    </button>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <h5 class="text-left m-3">Document Upload</h5>
-                        </div>
-                        <div class="row m-2">
-                            <div class="col-md-6">
-                                <label class="labels">Document Type</label>
-                                <div class="form-group">
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>--Select Document Type--</option>
-                                        <option>Prior Rabies Vaccine Certificate</option>
-                                        <option>Current Rabies Vaccine Certificate</option>
-                                        <option>Health Certificate</option>
-                                        <option>Health Certificate Issued in Hawaii (for HI pets returning)</option>
-                                    </select>
+
+                            <div class="row mb-5 pb-3 px-2 form_info_border">
+                                <h6 class="text-left mt-3 col-md-12">Document Upload</h6>
+                                <div class="row m-2">
+
+                                    <label class="labels">Document Type</label>
+                                    <div class="form-group">
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>--Select Document Type--</option>
+                                            <option>Prior Rabies Vaccine Certificate</option>
+                                            <option>Current Rabies Vaccine Certificate</option>
+                                            <option>Health Certificate</option>
+                                            <option>Health Certificate Issued in Hawaii (for HI pets returning)</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6"><label class="labels">Expiration Date</label>
-                                <div class="datepicker date input-group p-0 shadow-sm">
-                                    <input type="text" placeholder="Enter exp date" class="form-control py-3 px-3" id="exp-datepicker-pet">
-                                    <div class="input-group-append"><span class="input-group-text px-3"><i class="fa fa-clock-o"></i></span></div>
+                                <div class="col-md-6"><label class="labels">Expiration Date</label>
+                                    <div class="datepicker date input-group p-0 shadow-sm">
+                                        <input type="text" placeholder="Enter exp date" class="form-control py-3 px-3" id="exp-datepicker-pet">
+                                        <div class="input-group-append"><span class="input-group-text px-3"><i class="fa fa-clock-o"></i></span></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-12">
-                                <label class="labels">Upload File</label>
-                                <div class="input-group mb-3">
+                                <div class="col-md-12">
+                                    <label class="labels">Upload File</label>
                                     <div class="input-group">
                                         <input id="input-b2" name="input-b2" type="file" class="file" data-show-preview="true">
                                         <div class="input-group-append"><button class="btn btn-outline-secondary" type="button">Upload</button></div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <!-- <div class="d-flex justify-content-between align-items-center mb-3"> -->
 
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <h5 class="text-left m-3">Uploaded Document(s)</h5>
+                            <div class="row mb-5 pb-3 px-2 form_info_border">
+                                <h6 class="text-left m-3 col-md-12">Uploaded Document(s)</h6>
+                                <!-- </div> -->
+                                <table class="table m-2">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Type</th>
+                                            <th scope="col">Submit Date</th>
+                                            <th scope="col">Exp Date</th>
+                                            <th scope="col">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Rabies Vaccine Certificate</td>
+                                            <td>09/21/2021</td>
+                                            <td>12/31/2020</td>
+                                            <td>Expired</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Health Certificate</td>
+                                            <td>09/21/2021</td>
+                                            <td>12/31/2022</td>
+                                            <td>Verified</td>
+                                        </tr>
+                                        <tr>
+                                            <td>HI Health Certificate</td>
+                                            <td>09/18/2021</td>
+                                            <td>12/31/2021</td>
+                                            <td>Rejected</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="mt-5 text-center"><a class="btn btn_add" type="button" href="my_trips.html" id="submit_person">Save Profile</a></div>
                         </div>
-                        <table class="table m-2">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Type</th>
-                                    <th scope="col">Submit Date</th>
-                                    <th scope="col">Exp Date</th>
-                                    <th scope="col">Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Rabies Vaccine Certificate</td>
-                                    <td>09/21/2021</td>
-                                    <td>12/31/2020</td>
-                                    <td>Expired</td>
-                                </tr>
-                                <tr>
-                                    <td>Health Certificate</td>
-                                    <td>09/21/2021</td>
-                                    <td>12/31/2022</td>
-                                    <td>Verified</td>
-                                </tr>
-                                <tr>
-                                    <td>HI Health Certificate</td>
-                                    <td>09/18/2021</td>
-                                    <td>12/31/2021</td>
-                                    <td>Rejected</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="mt-5 mb-5 text-left"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    </div>
     </div>
 </body>
 

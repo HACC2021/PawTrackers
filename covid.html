@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>TITLE_HERE</title>
+    <title>COVID-19 Survey</title>
     <link rel="icon" href="https://i.pinimg.com/originals/94/e3/7f/94e37f28a1359b00bbc985de4a3c2fb4.png" type="image/x-icon">
     <meta charset="UTF-8">
     <!-- Global Includes -->
@@ -10,8 +10,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/models.js"></script>
     <script src="js/setup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="js/popover.js"></script>
+    <link rel="stylesheet" href="css/popover.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
 
     <!-- Page Includes -->
+    <script src="https://kit.fontawesome.com/3aad77fea3.js" crossorigin="anonymous"></script>
     <!-- slider stylesheet -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
     <!-- bootstrap core css -->
@@ -29,62 +35,75 @@
     <div data-include="horizontal_menu"></div>
 
     <div class="container-fluid">
-        <div class="row mt-2">
-            <div data-include="vertical_menu"></div>
-            <div class="container border">
-                <div class="m-3">
-                    <h5>Are You Fully Vaccinated?</h5>
-                    <p>**has it been 14 days or more since you have completed a COVID-19 vaccination series (which is the required amount of doses for your particular brand vaccine; for example, 2 doses for Pfizer or 1 dose for Johnson and Johnson) and you
-                        have no symptoms</p>
+        <div class="row mt-5 justify-content-center">
+            <div class="container row_border rounded bg-white mt-5 mb-5 col-md-9">
+                <div class="row pt-5 justify-content-center">
+                    <div class="col-md-10">
+                        <div class="m-3">
 
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="vacc_radio" id="full_vac" value="option1">
-                        <label class="form-check-label" for="full_vac">
-                            I HAVE BEEN FULLY VACCINATED (It has been 14 days since my last shot)
-                        </label>
+                            <h3 class="text-center text_reg">COVID-19 Survey</h3>
+
+                            <div class="p-3 py-5">
+
+                                <h6 class="col-md-12 mt-3 text-left">Are You Fully Vaccinated?</h6>
+
+                                <div class="row mb-5 pb-3 px-2 form_info_border">
+                                    <div class="container">
+                                        <div class="col-md-12 m-3">
+
+                                            <p><span style="color: #f89e12; "><strong>**has it been 14 days or more since you have completed a COVID-19 vaccination series (which is the required amount of doses for your particular brand vaccine; for example, 2 doses for Pfizer or 1 dose for Johnson
+                                                and Johnson) and you have no symptoms</strong></span></p>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="vacc_radio" id="full_vac" value="option1">
+                                                <label class="form-check-label" for="full_vac">I HAVE BEEN FULLY VACCINATED (It has been 14 days since my last shot)</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="vacc_radio" id="no_vac" value="option2">
+                                                <label class="form-check-label" for="no_vac">I HAVE NOT BEEN FULLY VACCINATED (It has not been 14 days since my last shot)</label>
+                                            </div>
+                                            <div class="form-check disabled">
+                                                <input class="form-check-input" type="radio" name="vacc_radio" id="no_say_vac" value="option3">
+                                                <label class="form-check-label" for="no_say_vac">I PREFER NOT TO RESPOND</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="m-3">
+
+                                    <h6 class="col-md-12 mt-3 text-left">In the last 10 days...</h6>
+
+                                    <div class="row mb-5 pb-3 px-2 form_info_border">
+                                        <div class="container">
+                                            <div class="col-md-12 m-3">
+                                                <p>Q1) Have you received a confirmed diagnosis for coronavirus (COVID-19) by a coronavirus (COVID-19) test or from a diagnosis by a health care professional or are you waiting for a pending COVID-19 test result?</p>
+                                                <p>Q2) Have you had close contact with or cared for someone currently diagnosed with COVID-19 or are you participating in a COVID-19 clinical study that includes being exposed to the virus?</p>
+                                                <p>Q3) Have you experienced any cold or flu-like symptoms (to include fever, cough, shortness of breath or difficulty breathing, sore throat, pressure in the chest, extreme fatigue, earache, persistent headache,
+                                                    diarrhea, vomiting, muscle pain, chills, repeated shaking with chills, and persistent loss of smell or taste)?</p>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="q_radio" id="no_ans" value="option1">
+                                                    <label class="form-check-label" for="no_ans">NO to all 3 questions</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="q_radio" id="yes_ans" value="option2">
+                                                    <label class="form-check-label" for="yes_ans">YES to any one (or more) of the questions</label>
+                                                </div>
+                                                <div class="form-check disabled">
+                                                    <input class="form-check-input" type="radio" name="q_radio" id="no_say_ans" value="option3">
+                                                    <label class="form-check-label" for="no_say_ans">I PREFER NOT TO RESPOND</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <a class="btn btn-info btn-primary btn_add" href="user_trip_view.html">Submit</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="vacc_radio" id="no_vac" value="option2">
-                        <label class="form-check-label" for="no_vac">
-                            I HAVE NOT BEEN FULLY VACCINATED (It has not been 14 days since my last shot)
-                        </label>
-                    </div>
-                    <div class="form-check disabled">
-                        <input class="form-check-input" type="radio" name="vacc_radio" id="no_say_vac" value="option3">
-                        <label class="form-check-label" for="no_say_vac">
-                            I PREFER NOT TO RESPOND
-                        </label>
-                    </div>
-                </div>
-                <div class="m-3">
-                    <h5>In the last 10 days...</h5>
-                    <p>Q1) Have you received a confirmed diagnosis for coronavirus (COVID-19) by a coronavirus (COVID-19) test or from a diagnosis by a health care professional or are you waiting for a pending COVID-19 test result?</p>
-                    <p>Q2) Have you had close contact with or cared for someone currently diagnosed with COVID-19 or are you participating in a COVID-19 clinical study that includes being exposed to the virus?</p>
-                    <p>Q3) Have you experienced any cold or flu-like symptoms (to include fever, cough, shortness of breath or difficulty breathing, sore throat, pressure in the chest, extreme fatigue, earache, persistent headache, diarrhea, vomiting, muscle
-                        pain, chills, repeated shaking with chills, and persistent loss of smell or taste)?</p>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="q_radio" id="no_ans" value="option1">
-                        <label class="form-check-label" for="no_ans">
-                            NO to all 3 questions
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="q_radio" id="yes_ans" value="option2">
-                        <label class="form-check-label" for="yes_ans">
-                            YES to any one (or more) of the questions
-                        </label>
-                    </div>
-                    <div class="form-check disabled">
-                        <input class="form-check-input" type="radio" name="q_radio" id="no_say_ans" value="option3">
-                        <label class="form-check-label" for="no_say_ans">
-                            I PREFER NOT TO RESPOND
-                        </label>
-                    </div>
-                </div>
-                <div class="ml-auto">
-                    <a class="btn btn-info btn-primary" href="user_trip_view.html">
-                        Submit
-                    </a>
                 </div>
             </div>
         </div>

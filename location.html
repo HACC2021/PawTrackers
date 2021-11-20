@@ -11,6 +11,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/models.js"></script>
     <script src="js/setup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="js/popover.js"></script>
+    <link rel="stylesheet" href="css/popover.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
 
     <!-- Page Includes -->
     <!-- slider stylesheet -->
@@ -23,6 +28,7 @@
     <link href="css/css-ninom/style.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="css/css-ninom/responsive.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/3aad77fea3.js" crossorigin="anonymous"></script>
     <link href="css/style.css" rel="stylesheet" />
 </head>
 
@@ -30,19 +36,32 @@
     <div data-include="horizontal_menu"></div>
 
     <div class="container-fluid">
-        <div class="row mt-2">
-            <div data-include="vertical_menu" class="col-md-2"></div>
-            <div class="container border col-md-9">
-                <p>Hours Open: 8:30 - 4:30pm (Sunday - Saturday)</p>
-                <embed src="assets/map.pdf" width="792px" height="700px" />
-                <p>Inspection hours for dog and cats at Daniel K. Inouye International Airport (Honolulu) are between the hours of 8:00 a.m. to 5:00 p.m. daily, including weekends and holidays. This information is particularly important for those who are
-                    qualifying their pets for direct release in Honolulu. Pet owners should be sure to arrange for their flights to arrive by 3:30 p.m. because it may take up to one hour for the airlines to transport a pet to the Airport Animal Quarantine
-                    Holding Facility and animals not arriving at the facility by 4:30 p.m. will not be released at the airport that day. Pets arriving in the late afternoon and evening will be held overnight until inspections are completed the following
-                    morning. Pets qualified for direct airport release that are held overnight for release in the morning at the Airport Animal Quarantine Holding Facility must be picked up by 10:00 a.m. or an additional $59 will be charged. Pet owners
-                    who are arriving in Honolulu and connecting to neighboring islands should pay particular attention to the inspection hours.</p>
+        <div class="row mt-5 justify-content-center"></div>
+        <div class="container row_border rounded bg-white mt-5 mb-5 col-md-9">
+            <div class="row pt-5 justify-content-center">
+                <div class="col-md-10">
+                    <!-- <div class="container border col-md-9"> -->
+                    <h3 class="text-center text_reg mb-3">Hours Open: 8:30 - 4:30pm (Sunday - Saturday)</h3>
+                    <div class="mt-3 text-center">
+                        <embed src="assets/map.pdf" width="792px" height="700px" />
+                    </div>
+                    <div class="p-3 py-5">
+                        <div class="row mb-5 pb-3 px-2 form_info_border">
+                            <div class="col m-2 mt-3">
+                                <p>Inspection hours for dog and cats at Daniel K. Inouye International Airport (Honolulu) are between the hours of 8:00 a.m. to 5:00 p.m. daily, including weekends and holidays. This information is particularly important for
+                                    those who are qualifying their pets for direct release in Honolulu. Pet owners should be sure to arrange for their flights to arrive by 3:30 p.m. because it may take up to one hour for the airlines to transport a pet
+                                    to the Airport Animal Quarantine Holding Facility and animals not arriving at the facility by 4:30 p.m. will not be released at the airport that day. Pets arriving in the late afternoon and evening will be held overnight
+                                    until inspections are completed the following morning. Pets qualified for direct airport release that are held overnight for release in the morning at the Airport Animal Quarantine Holding Facility must be picked up
+                                    by 10:00 a.m. or an additional $59 will be charged. Pet owners who are arriving in Honolulu and connecting to neighboring islands should pay particular attention to the inspection hours.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
+
 </body>
 
 </html>

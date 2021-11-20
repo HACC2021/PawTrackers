@@ -10,8 +10,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/models.js"></script>
     <script src="js/setup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="js/popover.js"></script>
+    <link rel="stylesheet" href="css/popover.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
     <!-- Page Includes -->
+    <script src="https://kit.fontawesome.com/3aad77fea3.js" crossorigin="anonymous"></script>
     <!-- slider stylesheet -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
     <!-- bootstrap core css -->
@@ -24,7 +29,7 @@
     <link href="css/css-ninom/responsive.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/person_form.css">
+    <link rel="stylesheet" href="css/registration_form.css">
     <script src="js/person_registration.js"></script>
 
 
@@ -42,20 +47,17 @@
     <div data-include="horizontal_menu"></div>
 
     <div class="container-fluid">
-        <div class="row mt-2">
-            <div data-include="vertical_menu"></div>
-            <div class="container rounded bg-white mt-5 mb-5 col-md-9">
-                <div class="row">
-                    <div class="col-md-3 border-right">
-                        <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold">Upload Photo</span>
-                        </div>
-                    </div>
-                    <div class="col-md-9 border-right">
+        <div class="row mt-5 justify-content-center">
+            <div class="container row_border rounded bg-white mt-5 mb-5 col-md-9">
+                <div class="row pt-5 justify-content-center">
+                    <div class="col-md-10">
+                        <h3 class="text-center text_reg">Registration</h3>
+                        <div class="d-flex flex-column align-items-center"><img class="rounded-circle" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold">Upload Photo</span></div>
                         <div class="p-3 py-5">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h3 class="text-right">Registration</h3>
-                            </div>
-                            <div class="row mt-2">
+
+                            <div class="row mb-5 pb-3 px-2 form_info_border">
+                                <h6 class="col-md-12 mt-3 text-left">Your Information</h6>
+
                                 <div class="col-md-5"><label class="labels">First Name</label><input type="text" class="form-control" id="first_name" placeholder="First name" value=""></div>
                                 <div class="col-md-2"><label class="labels">M.I.</label><input type="text" class="form-control" id="middle_initial" placeholder="" value="MI"></div>
                                 <div class="col-md-5"><label class="labels">Last Name</label><input type="text" class="form-control" id="last_name" value="" placeholder="Last name"></div>
@@ -109,8 +111,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row mt-3">
-                                <h6 class="text-left col-md-12">Identification Information</h6>
+                            <div class="row mb-5 pb-3 px-2 form_info_border">
+                                <h6 class="text-left mt-3 col-md-12">Identification Information</h6>
+
                                 <div class="col-md-6"><label class="labels">ID No. (Driver's License... etc.)</label><input type="text" class="form-control" id="id_num" placeholder="Last 4 digits" value=""></div>
                                 <div class="col-md-6"><label class="labels">ID Type</label>
                                     <div class="form-group">
@@ -133,7 +136,7 @@
                                 </div>
                             </div>
 
-                            <div class="row mt-3">
+                            <div class="row mb-5 pb-3 px-2 form_info_border">
                                 <h6 class="text-left mt-3 col-md-12">Current Address</h6>
                                 <div class="col-md-12"><label class="labels">Address Line 1</label><input type="text" class="form-control" id="addr_line1" placeholder="Enter address line 1" id="addr_line1"></div>
                                 <div class="col-md-12"><label class="labels">Address Line 2</label><input type="text" class="form-control" id="addr_line2" placeholder="Enter address line 2" id="addr_line2"></div>
@@ -141,7 +144,7 @@
                                 <div class="col-md-4"><label class="labels">State</label><input type="text" class="form-control" id="state" placeholder="Enter state" id="state"></div>
                                 <div class="col-md-4"><label class="labels">Zipcode</label><input type="text" class="form-control" id="zipcode" placeholder="Enter zip" id="zipcode"></div>
                             </div>
-                            <div class="row mt-3">
+                            <div class="row mb-5 pb-3 px-2 form_info_border">
                                 <h6 class="text-left mt-3 col-md-12">Hawaii Address</h6>
                                 <div class="col-md-12"><label class="labels">Address Line 1</label><input type="text" class="form-control" id="hi_line1" placeholder="Enter address line 1" value=""></div>
                                 <div class="col-md-12"><label class="labels">Address Line 2</label><input type="text" class="form-control" id="hi_line2" placeholder="Enter address line 2" value=""></div>
@@ -159,14 +162,14 @@
                                 </div>
                                 <div class="col-md-4"><label class="labels">Zipcode</label><input type="text" class="form-control" id="hi_zipcode" placeholder="Enter zipcode" value=""></div>
                             </div>
-                            <div class="row mt-3">
+                            <div class="row mb-5 pb-3 px-2 form_info_border">
                                 <h6 class="text-left mt-3 col-md-12">Contact Information</h6>
                                 <div class="col-md-6"><label class="labels">Primary Number</label><input type="text" class="form-control" id="phone" placeholder="Enter phone number" id="phone"></div>
                                 <div class="col-md-6"><label class="labels">Alternate Number</label><input type="text" class="form-control" id="alt_phone" placeholder="Enter alternate number" id="alt_phone"></div>
                                 <div class="col-md-6"><label class="labels">Country Address</label><input type="text" class="form-control" id="country_addr" placeholder="Enter country number" id="phone_country"></div>
                                 <div class="col-md-6"><label class="labels">Email</label><input type="text" class="form-control" id="email" placeholder="Enter email" id="email"></div>
                             </div>
-                            <div class="mt-5 text-center"><a class="btn btn-primary profile-button" type="button" href="my_trips.html" id="submit_person">Save Profile</a></div>
+                            <div class="mt-5 text-center"><a class="btn btn_add" type="button" href="my_trips.html" id="submit_person">Save Profile</a></div>
                         </div>
                     </div>
                 </div>

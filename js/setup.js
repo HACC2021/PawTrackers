@@ -86,6 +86,11 @@ $(function() {
                     });
                 }
 
+                console.log(`.${is_user_mode() ? "emp" : "user"}_menu a`)
+                $(`.${is_user_mode() ? "emp" : "user"}_menu`).each(function() {
+                    $(this).addClass("d-none")
+                });
+
                 for (const callback of nav_bar_loaded_callbacks) {
                     if (callback) {
                         callback();
@@ -157,6 +162,8 @@ function json_ready() {
     sessionStorage.user = JSON.stringify(users_json["user"]);
     sessionStorage.edit_user = "0";
     sessionStorage.curr_trip = "0";
+    sessionStorage.curr_pet = "0";
+
     sessionStorage.user_mode = JSON.stringify(true);
 
     sessionStorage.filter_start = "";
@@ -261,6 +268,8 @@ function load_global_from_session() {
     window.user = JSON.parse(sessionStorage.user);
     window.edit_user = JSON.parse(sessionStorage.edit_user);
     window.curr_trip = JSON.parse(sessionStorage.curr_trip);
+    window.curr_pet = JSON.parse(sessionStorage.curr_pet);
+
     window.user_mode = JSON.parse(sessionStorage.user_mode);
 
     window.filter_start = sessionStorage.filter_start;

@@ -8,10 +8,18 @@
     <!-- Global Includes -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/utils.js"></script>
     <script src="js/models.js"></script>
     <script src="js/setup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="js/popover.js"></script>
+    <link rel="stylesheet" href="css/popover.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
     <!-- Page Includes -->
+    <script src="https://kit.fontawesome.com/3aad77fea3.js" crossorigin="anonymous"></script>
+    <script src="js/user_trip_view.js"></script>
+    <script src="js/add_row_dynamically.js"></script>
     <!-- slider stylesheet -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
     <!-- bootstrap core css -->
@@ -23,140 +31,115 @@
     <!-- responsive style -->
     <link href="css/css-ninom/responsive.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="js/popover.js"></script>
-    <link rel="stylesheet" href="css/popover.css">
 </head>
 
 <body>
     <div data-include="horizontal_menu"></div>
+
     <div class="container-fluid">
-        <div class="row mt-2">
-            <div data-include="vertical_menu"></div>
-            <div class="container border col-md m-2">
-                <div class="row m-2">
-                    <h3 class="text-left mr-5">JPN-HNL</h3>
-                    <h3 class="text-left">11/29/2021</h3>
-                </div>
-                <div class="row m-2">
-                    <h5 class="text-left mr-5">Status: Incoming</h5>
-                    <h5 class="text-left mr-5">Edit Pet Import Form</h5>
-                    <h6 class="text-left text-secondary mr-5"><em>Updated 2 mins ago</em></h6>
-                </div>
-                <div class="row m-2">
-                    <h5 class="text-left">ETA Check-In: 13 minutes</h5>
-                </div>
-                <div class="row">
-                    <div class="">
-                        <a class="btn btn-info btn-primary" href="covid.html">
-                            Complete COVID-19 Survey
-                        </a>
-                    </div>
-                    <div class="ml-auto">
-                        <a class="btn btn-info btn-primary" href="user_chat.html">
-                            Get Help
-                        </a>
-                    </div>
-                </div>
-                <div class="row m-2">
-                    <h4 class="text-left ml-3 mt-4">Pets</h4>
-                    <div class="ml-auto">
-                        <a class="btn btn-info btn-primary" href="pet_registration.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+        <div class="row my-5">
+        </div>
+        <div class="container row_border rounded bg-white mt-5 mb-5 col-md-9">
+
+            <div class="row pt-5 justify-content-center">
+                <div class="col-11">
+                    <h3 class="text-center text_reg">Trip View</h3>
+                    <div class="p-3 py-5">
+
+                        <!-- <div class="row tablerow justify-content-center"> -->
+                        <div class="row mb-5 pb-3 px-2 form_info_border">
+                            <h6 class="col-md-12 mt-3 text-left">Trip Information</h6>
+                            <!-- <div class="card tablecard p-4"> -->
+                            <div class="col-12">
+                                <div class="row m-2">
+                                    <h3 class="text-left mr-5" id="loc_txt"></h3>
+                                    <h3 class="text-left" id="flight_date_txt"></h3>
+                                </div>
+                                <div class="row m-2">
+                                    <h5 class="text-left mr-5" id="status_txt"></h5>
+                                    <h5 class="text-left mr-5">Edit Pet Import Form</h5>
+                                    <h6 class="text-left text-secondary mr-5" id="update_txt"><em></em></h6>
+                                </div>
+                                <div class="row m-2">
+                                    <h5 class="text-left" id="eta_check_in_txt">ETA Check-In: 13 minutes</h5>
+                                </div>
+                                <div class="row">
+                                    <div class="">
+                                        <a class="btn btn-info btn-primary btn_add" href="covid.html">
+                                                Complete COVID-19 Survey
+                                            </a>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <a class="btn btn-info btn-primary btn_add" href="user_chat.html">
+                                                Get Help
+                                            </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="row m-2"> -->
+                        <div class="row mb-5 pb-3 px-2 form_info_border">
+                            <h6 class="col-md-12 mt-3 text-left">Pets</h6>
+                            <!-- <h4 class="text-left ml-3 mt-4">Pets</h4> -->
+                            <div class="ml-auto">
+                                <a class="btn btn-info btn-primary btn_add" href="pet_registration.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                                     <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
-                            </svg>Pet
-                        </a>
-                    </div>
-                    <table class="table m-2">
-                        <thead>
-                            <tr>
-                                <th scope="col">Name</th>
-                                <th scope="col">Status</th>
-                                <th scope="col">Arrived</th>
-                                <th scope="col">Documents</th>
-                                <th scope="col">Microchip #</th>
-                                <th scope="col">Comments</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Spot</td>
-                                <td>Arrived</td>
-                                <td>10 mins ago</td>
-                                <td>Incomplete</td>
-                                <td>A117</td>
-                                <td> </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="row m-2">
-                    <h4 class="text-left ml-3 mt-4">Documents</h4>
-                    <div class="ml-auto">
-                        <div data-include="popover_document_upload"></div>
-                    </div>
-                    <table class="table m-2">
-                        <thead>
-                            <tr>
-                                <th scope="col">Type</th>
-                                <th scope="col">Pet Name</th>
-                                <th scope="col">Status</th>
-                                <th scope="col">Date Submitted</th>
-                                <th scope="col">Expiration</th>
-                                <th scope="col">Comments</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Health Certificate Form</td>
-                                <td>Spot</td>
-                                <td>Expired</td>
-                                <td>11/17/2021 05:43:47 PM</td>
-                                <td>12/31/2020</td>
-                                <td style="word-wrap: break-word;min-width: 160px;max-width: 160px;">Please resubmit valid Health Certificate Form</td>
-                            </tr>
-                        </tbody>
-                        <tbody>
-                            <tr>
-                                <td>Pet Import Form</td>
-                                <td>Spot</td>
-                                <td>Verified</td>
-                                <td>11/17/2021 05:41:08 PM</td>
-                                <td>N/A</td>
-                                <td> </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="row m-2">
-                    <h4 class="text-left ml-3 mt-4">Handlers</h4>
-                    <div class="ml-auto">
-                        <a class="btn btn-info btn-primary" href="person_registration.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                </svg>Pet
+                                </a>
+                            </div>
+                            <table class="table m-2" id="pet_table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Arrived</th>
+                                        <th scope="col">Documents</th>
+                                        <th scope="col">Microchip #</th>
+                                        <th scope="col">Comments</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="row mb-5 pb-3 px-2 form_info_border">
+                            <h6 class="col-md-12 mt-3 text-left">Documents</h6>
+                            <div class="ml-auto">
+                                <div data-include="popover_document_upload"></div>
+                            </div>
+                            <table class="table m-2" id="document_table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">Pet Name</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Date Submitted</th>
+                                        <th scope="col">Expiration</th>
+                                        <th scope="col">Comments</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="row mb-5 pb-3 px-2 form_info_border">
+                            <h6 class="col-md-12 mt-3 text-left">Handlers</h6>
+                            <div class="ml-auto">
+                                <a class="btn btn-info btn-primary btn_add" href="person_registration.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                                     <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
-                            </svg>Handler
-                        </a>
+                                </svg>Handler
+                                </a>
+                            </div>
+                            <table class="table m-2" id="handler_table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Arrived</th>
+                                        <th scope="col">Ownership Type</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
                     </div>
-                    <table class="table m-2">
-                        <thead>
-                            <tr>
-                                <th scope="col">Name</th>
-                                <th scope="col">Status</th>
-                                <th scope="col">Arrived</th>
-                                <th scope="col">Ownership Type</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>John Smith</td>
-                                <td>Checked-In</td>
-                                <td>6 mins ago</td>
-                                <td>Primary</td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
             </div>
         </div>

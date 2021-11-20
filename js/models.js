@@ -96,11 +96,11 @@ class Person {
 }
 
 class Pet {
-    constructor(obj, visitors = {}, documents = {}) {
+    constructor(obj, visitors = {}, pet_documents = {}) {
         //pet_id, pet_name, species, country, dob, breed, sex, spayed_neutered, color, microchip_nums, visitor_ids, document_ids, update_time
         obj && Object.assign(this, obj);
         if (!this.visitors) this.visitors = visitors;
-        if (!this.documents) this.documents = documents;
+        if (!this.pet_documents) this.pet_documents = pet_documents;
     }
 }
 
@@ -125,7 +125,7 @@ class Trip_Pet {
 
 class Document {
     constructor(obj) {
-        // doc_name, doc_type, doc_status, link, is_trip, is_pet, submission_time
+        // doc_name, doc_type, doc_status, link, is_trip, is_pet, submission_time, exp_time
         obj && Object.assign(this, obj);
     }
 }
